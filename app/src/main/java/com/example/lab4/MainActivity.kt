@@ -1,12 +1,15 @@
 package com.example.lab4
 
+import Lab5.Todo
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -25,9 +28,11 @@ import com.example.lab4.ui.theme.Lab4Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // enableEdgeToEdge() // Verifica si esta función es necesaria
+        enableEdgeToEdge() // Verifica si esta función es necesaria
         setContent {
-            FrontBasico()
+            Scaffold { innerPadding ->
+                Todo(modifier = Modifier.padding(innerPadding))
+            }
         }
     }
 }
