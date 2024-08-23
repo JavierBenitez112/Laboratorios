@@ -292,7 +292,7 @@ fun Restaurante() {
 
 
 @Composable
-fun Todo(modifier: Modifier = Modifier) {
+fun Todo5(modifier: Modifier = Modifier) {
     Column(modifier = modifier
         .fillMaxSize()
         .background(Color(0xFFE0E0E0))) {
@@ -307,5 +307,5 @@ fun Todo(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun PreviewRestaurante() {
-    Todo()
+    Todo5()
 }
