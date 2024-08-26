@@ -1,6 +1,6 @@
 package com.example.lab4
 
-import Lab7.Todo7
+import Todo7
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.sp
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge() // Verifica si esta función es necesaria
+        enableEdgeToEdge()
         setContent {
             Scaffold { innerPadding ->
                 Todo7(modifier = Modifier.padding(innerPadding))
