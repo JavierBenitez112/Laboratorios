@@ -1,5 +1,6 @@
 package com.example.lab4
 
+import Lab7.Todo6
 import Todo7
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -29,7 +30,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Scaffold { innerPadding ->
-                Todo7(modifier = Modifier.padding(innerPadding))
+                Todo6(modifier = Modifier.padding(innerPadding))
             }
         }
     }
